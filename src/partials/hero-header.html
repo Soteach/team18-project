@@ -2,7 +2,11 @@
     <div class="header">
         <div class="container">
             <div class="header-block">
-                <a href="./index.html" lang="en" class="header-block__logo--black"><span class="header-block__logo--blue">Web</span>Studio</a>  
+                <div>
+                    <svg class="header-icon" width="199" height="50" aria-label="Перемикач мобільного меню">
+                        <use class="mobail-buton-menue__icon--close" href="/src/svg/sprite.svg#logo"></use>
+                    </svg>
+                </div>  
                 <button
                     type="button"
                     aria-expanded="false"
@@ -10,9 +14,11 @@
                     class="mobail-buton-menue"
                     data-menu-button
                     >
-                    <svg class="mobail-buton-menue__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
-                        <use class="mobail-buton-menue__icon--close" href="./images/sprite.svg#icon-close-menu"></use>
-                        <use class="mobail-buton-menue__icon--menu" href="./images/sprite.svg#icon-menu"></use>
+                    <svg class="mobail-buton-menue__icon" width="14" height="14" aria-label="Перемикач мобільного меню">
+                        <use class="mobail-buton-menue__icon--close" href="/src/svg/sprite.svg#close"></use>
+                    </svg>
+                    <svg class="mobail-buton-menue__icon" width="20" height="12" aria-label="Перемикач мобільного меню">
+                        <use class="mobail-buton-menue__icon--menu" href="/src/svg/sprite.svg#burger"></use>
                     </svg>
                 </button> 
                 <div class="mobile-site-nav mobile-backround" id="mobile-site-nav" data-menu>

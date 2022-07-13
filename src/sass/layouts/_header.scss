@@ -1,0 +1,14 @@
+.mobail-buton-menue {
+   
+    display: block;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    fill: $main-text-color;
+    z-index: 1;
+    color: $main-text-color;
+    cursor: pointer;
+    @media screen and (min-width: 768px) {
+        display:none;
+    }
+}
