@@ -1,2 +1,16 @@
 @import './common';
-@import './example';
+@import './utils/reset';
+@import './utils/visually-hidden';
+@import './utils/variables';
+@import './utils/mixins';
+@import './components/body';
+@import './components/buttons';
+@import './components/modal';
+@import './layouts/header';
+@import './layouts/products';
+@import './layouts/about';
+@import './layouts/advantages';
+@import './layouts/gallery';
+@import './layouts/customer-reviews';
+@import './layouts/contacts';
+@import './layouts/footer';
