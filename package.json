@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Soteach.github.io/team18-project.git",
+  "homepage": "https://Soteach.github.io/team18-project",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team18-project.git/"
+    "build": "parcel build src/*.html --public-url /team18-project/"
   },
   "repository": {
     "type": "git",
