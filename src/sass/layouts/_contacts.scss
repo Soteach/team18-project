@@ -1,0 +1,283 @@
+.contacts {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+    background: rgb(255, 245, 246);
+    background: linear-gradient(0deg, rgba(255, 245, 246, 1) 76%, rgba(255, 255, 255, 1) 76%);
+
+    @include tablet {
+        background: rgb(255, 245, 246);
+        background: linear-gradient(0deg, rgba(255, 245, 246, 1) 54%, rgba(255, 255, 255, 1) 54%);
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    @include desktop {
+        background: rgb(255, 245, 246);
+        background: linear-gradient(0deg, rgba(255, 245, 246, 1) 80%, rgba(255, 255, 255, 1) 80%);
+    }
+}
+
+.contacts-card {
+
+
+    width: 280px;
+    height: 412px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding-left: 32px;
+
+    @include desktop {
+        padding-left: 40px;
+    }
+
+
+    @include tablet {
+        width: calc((100% - 64px) / 3);
+        width: 224px;
+        height: 538px;
+    }
+
+    @include desktop {
+        width: 368px;
+        height: 538px;
+    }
+
+
+
+}
+
+.contacts-list {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 32px;
+    justify-content: center;
+
+    @include tablet {
+        gap: 32px;
+        margin-bottom: 60px;
+    }
+}
+
+
+
+
+.contacts-top-text {
+
+
+    font-family: 'DM Sans';
+    @include fontStyle (12px, 500, 0.04em, 1.86);
+    color: #FFFFFF;
+
+    @include mobile {
+        @include fontStyle (16px, 500, 0.04em, 1.87);
+    }
+
+}
+
+
+
+
+.contacts-top {
+
+    width: 80px;
+    height: 16px;
+    background: #F0D1A5;
+    border-radius: 4px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet {
+        width: 73px;
+        height: 28px;
+    }
+
+
+
+}
+
+.top-color {
+    background-color: #C2E297;
+    width: 130px;
+
+    @include tablet {
+        width: 138px;
+    }
+}
+
+.contacts-location {
+    margin-bottom: 8px;
+    font-family: 'DM Sans';
+    @include fontStyle (12px, 500, 0.04em, 1.50);
+
+    @include tablet {
+        @include fontStyle (14px, 500, 0.04em, 1.85);
+    }
+
+    @include desktop {
+        @include fontStyle (16px, 500, 0.04em, 1.87);
+    }
+}
+
+.contacts-text {
+    font-family: 'DM Sans';
+    @include fontStyle (12px, 500, 0.04em, 1.86);
+
+    color: #907E82;
+
+    @include tablet {
+        width: 158px;
+        @include fontStyle (14px, 500, 0.04em, 1.85);
+    }
+
+    @include desktop {
+        width: 244px;
+        @include fontStyle (16px, 500, 0.04em, 1.87);
+    }
+}
+
+.contacts-weekdays {
+
+    font-family: 'DM Sans';
+    @include fontStyle (12px, 500, 0.04em, 1.86);
+
+    @include tablet {
+        width: 158px;
+        @include fontStyle (14px, 500, 0.04em, 1.85);
+    }
+
+    @include desktop {
+        width: 243px;
+        @include fontStyle (16px, 500, 0.04em, 1.87);
+    }
+}
+
+.contacts-weekend {
+    font-family: 'DM Sans';
+    @include fontStyle (12px, 500, 0.04em, 1.86);
+
+    @include tablet {
+        width: 158px;
+        @include fontStyle (14px, 500, 0.04em, 1.85);
+    }
+
+    @include desktop {
+        width: 243px;
+        @include fontStyle (16px, 500, 0.04em, 1.87);
+    }
+}
+
+.contacts-work-time {
+    font-family: 'DM Sans';
+    @include fontStyle (12px, 500, 0.04em, 1.86);
+    color: #FFA5BA;
+
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    @include tablet {
+        width: 158px;
+        @include fontStyle (14px, 500, 0.04em, 1.85);
+    }
+
+    @include desktop {
+        width: 243px;
+        @include fontStyle (16px, 500, 0.04em, 1.87);
+    }
+
+}
+
+
+.contacts-border {
+    border-bottom: 1px solid #E1E1E1;
+    width: 216px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    @include tablet {
+        width: 160px;
+    }
+}
+
+.contacts-btn {
+    width: 161.45px;
+    height: 44px;
+    border-radius: 22px;
+    cursor: pointer;
+
+}
+
+.contacts-btn-item {
+    cursor: pointer;
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+
+    @include tablet {
+        &:not(:last-child) {
+            margin-right: 14.5px;
+            margin-bottom: 0;
+        }
+    }
+
+    @include desktop {
+        &:not(:last-child) {
+            margin-right: 12px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+
+
+.contacts-button {
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.contacnts-tel,
+.contacnts-mail {
+    font-family: 'DM Sans';
+    @include fontStyle (12px, 500, 0.04em, 1.86);
+    color: #907E82;
+
+    @include tablet {
+        width: 158px;
+        @include fontStyle (14px, 500, 0.04em, 1.85);
+    }
+
+    @include desktop {
+        width: 243px;
+        @include fontStyle (16px, 500, 0.04em, 1.87);
+    }
+}
+
+
+.contacts-btn {
+    font-family: 'DM Sans';
+    @include fontStyle (16px, 700, 0.04em, 1.31);
+    background: #D41342;
+    border-radius: 22px;
+    border: none;
+    color: #FFFFFF;
+}
+
+.color-btn {
+    color: #D41342;
+    background: #FFFFFF;
+}
