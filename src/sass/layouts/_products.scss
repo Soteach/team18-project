@@ -1,0 +1,212 @@
+            .label-title {
+                margin-bottom: 15px;
+                font-family: 'Titan One';
+                font-size: 18px;
+                line-height: 1.16;
+                text-align: center;
+                text-transform: uppercase;
+                color: var(--second-rose-color);
+                @include tablet {
+                    font-size: 26px;
+                    line-height: 1.15;
+                }
+                @include desktop {
+                    font-size: 30px;
+                    line-height: 1.13;
+                }
+            }
+            
+            .section-title {
+                font-family: 'Titan One';
+                font-weight: 400;
+                font-size: 34px;
+                line-height: 1.14;
+                text-align: center;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: var(--accent-color);
+                margin-bottom: 8px;
+                @include tablet {
+                    font-size: 48px;
+                    line-height: 1.14;
+                    margin-bottom: 20px;
+                }
+                @include desktop {
+                    font-size: 58px;
+                    line-height: 1.13;
+                    letter-spacing: 0.06em;
+                }
+            }
+            
+            .product-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-bottom: 60px;
+                @include tablet {
+                    gap: 16px;
+                }
+                @include desktop {
+                    flex-wrap: nowrap;
+                    gap: 32px;
+                }
+            }
+            
+            .product-item {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                background-color: var(--main-rose-color);
+                border-radius: 24px;
+                padding: 40px;
+                margin-top: 140px;
+                @include tablet {
+                    width: calc((100% - 32px) / 3);
+                    padding: 40px 32px;
+                }
+                @include desktop {
+                    width: calc((100% - 64px) / 3);
+                    padding: 60px;
+                    margin-top: 260px;
+                }
+            }
+            
+            .product-item.cream {
+                background-color: var(--main-rose-color);
+                &::before {
+                    content: "";
+                    height: 280px;
+                    width: 280px;
+                    margin-top: -180px;
+                    margin-left: -40px;
+                    background-image: url("/src/images/p-ice-cream_mob.png");
+                    background-repeat: no-repeat;
+                    @include tablet {
+                        height: 224px;
+                        width: 224px;
+                        margin-top: -180px;
+                        margin-left: -32px;
+                        background-image: url("/src/images/p-ice-cream_tab.png");
+                    }
+                    @include desktop {
+                        height: 394px;
+                        width: 368px;
+                        margin-top: -320px;
+                        margin-left: -60px;
+                        background-image: url("/src/images/p-ice-cream_desktop.png");
+                    }
+                }
+            }
+            
+            .product-item.coffee {
+                background: var(--second-card-color);
+                &::before {
+                    content: "";
+                    height: 280px;
+                    width: 280px;
+                    margin-top: -180px;
+                    margin-left: -40px;
+                    background-image: url("/src/images/p-ice-coffee_mob.png");
+                    background-repeat: no-repeat;
+                    @include tablet {
+                        height: 224px;
+                        width: 224px;
+                        margin-top: -180px;
+                        margin-left: -32px;
+                        background-image: url("/src/images/p-ice-coffee_tab.png");
+                    }
+                    @include desktop {
+                        height: 394px;
+                        width: 368px;
+                        margin-top: -300px;
+                        margin-left: -60px;
+                        background-image: url("/src/images/p-ice-coffee_desktop.png");
+                    }
+                }
+            }
+            
+            .product-item.milk {
+                background: var(--third-card-color);
+                &::before {
+                    content: "";
+                    height: 280px;
+                    width: 280px;
+                    margin-top: -180px;
+                    margin-left: -40px;
+                    background-image: url("/src/images/p-milkshake_mob.png");
+                    background-repeat: no-repeat;
+                    @include tablet {
+                        height: 224px;
+                        width: 224px;
+                        margin-top: -180px;
+                        margin-left: -32px;
+                        background-image: url("/src/images/p-milkshake_tab.png");
+                    }
+                    @include desktop {
+                        height: 394px;
+                        width: 368px;
+                        margin-top: -300px;
+                        margin-left: -60px;
+                        background-image: url("/src/images/p-milkshake_desktop.png");
+                    }
+                }
+            }
+            
+            .product-title {
+                font-family: 'Titan One';
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 23px;
+                text-align: center;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: var(--main-color);
+                margin-top: 20px;
+                @include tablet {
+                    margin-top: 32px;
+                }
+                @include desktop {
+                    margin-top: 32px;
+                    font-size: 30px;
+                    line-height: 1.13;
+                }
+                &::after {
+                    content: "•••";
+                    display: flex;
+                    justify-content: center;
+                    width: 26px;
+                    margin: 32px auto;
+                    color: var(--main-color);
+                }
+            }
+            
+            .product-text {
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 152%;
+                text-align: center;
+                letter-spacing: 0.04em;
+                color: var(--main-color);
+                margin-bottom: 32px;
+                @include tablet {
+                    font-size: 14px;
+                    line-height: 176%;
+                }
+                @include desktop {
+                    font-size: 16px;
+                    line-height: 176%;
+                    margin-bottom: 60px;
+                }
+            }
+            
+            .product-button {
+                margin: 0 auto;
+                text-align: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 0;
+                background-image: url("/src/images/p-arrow-right.png");
+            }
