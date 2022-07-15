@@ -1,4 +1,29 @@
 <section class="gallery">
-    <h2>Gallery</h2>
-    <img src="./images/group47 1.png" alt="group of pictures" width="320">
+    <h2 hidden>Gallery</h2>
+    <picture>
+        <source 
+        srcset="
+        ./images/group47desk.png 1x,
+        ./images/group47desk2x.png 2x"
+        media="(min-width: 1200px)"
+        >
+        <source 
+        srcset="
+        ./images/group47tab.png 1x,
+        ./images/group47tab2x.png 2x"
+        media="(min-width: 768px)"
+        />
+        <source 
+        srcset="
+        ./images/group47mob.png 1x,
+        ./images/group47mob2x.png 2x
+        "
+        media="(min-width: 320px)"
+        />
+        <img 
+    src="./images/group47mob.png" 
+    alt="group of pictures" 
+    width="320">
+    </picture>
+    
 </section>
