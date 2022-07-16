@@ -1,15 +1,14 @@
 @mixin fontStyle($fs, $fw, $ls, $lh) {
     font-size: $fs;
-    font-weight: $fw; 
+    font-weight: $fw;
     letter-spacing: $ls;
     line-height: $lh;
 }
 
-@mixin tranSition ($td:250ms, $ttf:cubic-bezier(0.4, 0, 0.2, 1)) {
+@mixin tranSition ($td: 250ms, $ttf: cubic-bezier(0.4, 0, 0.2, 1)) {
     transition-duration: $td;
-    transition-timing-function:$ttf;
+    transition-timing-function: $ttf;
 }
-
 
 @mixin minimize {
     @media screen and (max-width: 319px) {
@@ -35,7 +34,6 @@
     }
 }
 
-
 @mixin mindesktop {
     @media screen and (max-width: 1199px) {
         @content
@@ -47,3 +45,51 @@
         @content
     }
 }
+
+@mixin mq($type) {
+    $mobile: 480px;
+    $tablet: 768px;
+    $desktop: 1200px;
+  
+    @if $type == 'mobile-only' {
+      @media screen and (max-width: #{$tablet - 0.02}) {
+        @content;
+      }
+    }
+    @if $type == 'mobile' {
+      @media screen and (min-width: $mobile) {
+        @content;
+      }
+    }
+    @if $type == 'tablet-only' {
+      @media screen and (min-width: $tablet) and (max-width: #{$desktop - 0.02}) {
+        @content;
+      }
+    }
+    @if $type == 'tablet' {
+      @media screen and (min-width: $tablet) {
+        @content;
+      }
+    }
+    @if $type == 'not-desktop' {
+      @media screen and (max-width: #{$desktop - 0.02}) {
+        @content;
+      }
+    }
+    @if $type == 'desktop' {
+      @media screen and (min-width: $desktop) {
+        @content;
+      }
+    }
+
+
+
+    @if $type == 'retina' {
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        @content;
+      }
+    }
+
+
+    
+  }
