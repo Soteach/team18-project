@@ -1,15 +1,14 @@
 @mixin fontStyle($fs, $fw, $ls, $lh) {
     font-size: $fs;
-    font-weight: $fw; 
+    font-weight: $fw;
     letter-spacing: $ls;
     line-height: $lh;
 }
 
-@mixin tranSition ($td:250ms, $ttf:cubic-bezier(0.4, 0, 0.2, 1)) {
+@mixin tranSition ($td: 250ms, $ttf: cubic-bezier(0.4, 0, 0.2, 1)) {
     transition-duration: $td;
-    transition-timing-function:$ttf;
+    transition-timing-function: $ttf;
 }
-
 
 @mixin minimize {
     @media screen and (max-width: 319px) {
@@ -34,7 +33,6 @@
         @content
     }
 }
-
 
 @mixin mindesktop {
     @media screen and (max-width: 1199px) {
