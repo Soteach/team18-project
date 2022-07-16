@@ -1,11 +1,10 @@
             .label-title {
-                margin-bottom: 15px;
+                @include fontStyle(18px, 400, 0, 1.16);
                 font-family: 'Titan One';
-                font-size: 18px;
-                line-height: 1.16;
                 text-align: center;
                 text-transform: uppercase;
                 color: var(--second-rose-color);
+                margin-bottom: 15px;
                 @include tablet {
                     font-size: 26px;
                     line-height: 1.15;
@@ -17,12 +16,9 @@
             }
             
             .section-title {
+                @include fontStyle(34px, 400, 0.04em, 1.14);
                 font-family: 'Titan One';
-                font-weight: 400;
-                font-size: 34px;
-                line-height: 1.14;
                 text-align: center;
-                letter-spacing: 0.04em;
                 text-transform: uppercase;
                 color: var(--accent-color);
                 margin-bottom: 8px;
@@ -71,6 +67,48 @@
                 }
             }
             
+            .product-title {
+                @include fontStyle(20px, 400, 0.04em, 1.15);
+                font-family: 'Titan One';
+                text-align: center;
+                text-transform: uppercase;
+                color: var(--main-color);
+                margin-top: 20px;
+                @include tablet {
+                    margin-top: 32px;
+                }
+                @include desktop {
+                    margin-top: 32px;
+                    font-size: 30px;
+                    line-height: 1.13;
+                }
+                &::after {
+                    content: "•••";
+                    display: flex;
+                    justify-content: center;
+                    width: 26px;
+                    margin: 32px auto;
+                    color: var(--main-color);
+                }
+            }
+            
+            .product-text {
+                @include fontStyle(14px, 700, 0.04em, 152%);
+                font-family: 'DM Sans';
+                text-align: center;
+                color: var(--main-color);
+                margin-bottom: 32px;
+                @include tablet {
+                    font-size: 14px;
+                    line-height: 176%;
+                }
+                @include desktop {
+                    font-size: 16px;
+                    line-height: 176%;
+                    margin-bottom: 60px;
+                }
+            }
+            
             .product-item.cream {
                 background-color: var(--main-rose-color);
                 &::before {
@@ -93,7 +131,7 @@
                         width: 368px;
                         margin-top: -320px;
                         margin-left: -60px;
-                        background-image: url("/src/images/p-ice-cream_desktop.png");
+                        background-image: url("/src/images/p-ice-cream_optimized.png");
                     }
                 }
             }
@@ -118,9 +156,9 @@
                     @include desktop {
                         height: 394px;
                         width: 368px;
-                        margin-top: -300px;
+                        margin-top: -320px;
                         margin-left: -60px;
-                        background-image: url("/src/images/p-ice-coffee_desktop.png");
+                        background-image: url("/src/images/p-ice-coffee_optimized.png");
                     }
                 }
             }
@@ -145,59 +183,10 @@
                     @include desktop {
                         height: 394px;
                         width: 368px;
-                        margin-top: -300px;
+                        margin-top: -320px;
                         margin-left: -60px;
-                        background-image: url("/src/images/p-milkshake_desktop.png");
+                        background-image: url("/src/images/p-milkshake_optimized.png");
                     }
-                }
-            }
-            
-            .product-title {
-                font-family: 'Titan One';
-                font-weight: 400;
-                font-size: 20px;
-                line-height: 23px;
-                text-align: center;
-                letter-spacing: 0.04em;
-                text-transform: uppercase;
-                color: var(--main-color);
-                margin-top: 20px;
-                @include tablet {
-                    margin-top: 32px;
-                }
-                @include desktop {
-                    margin-top: 32px;
-                    font-size: 30px;
-                    line-height: 1.13;
-                }
-                &::after {
-                    content: "•••";
-                    display: flex;
-                    justify-content: center;
-                    width: 26px;
-                    margin: 32px auto;
-                    color: var(--main-color);
-                }
-            }
-            
-            .product-text {
-                font-family: 'DM Sans';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 14px;
-                line-height: 152%;
-                text-align: center;
-                letter-spacing: 0.04em;
-                color: var(--main-color);
-                margin-bottom: 32px;
-                @include tablet {
-                    font-size: 14px;
-                    line-height: 176%;
-                }
-                @include desktop {
-                    font-size: 16px;
-                    line-height: 176%;
-                    margin-bottom: 60px;
                 }
             }
             
