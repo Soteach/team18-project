@@ -32,6 +32,8 @@
         background-image: linear-gradient(var(--how-it-made-section-color) 0 56%, var(--main-color) 56% 100%); 
     }
     @include desktop {
+        display: flex;
+    justify-content: center;
         padding-top: 60px;
         padding-bottom: 60px;
         .container {
