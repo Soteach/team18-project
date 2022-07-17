@@ -1,6 +1,6 @@
-<section class="contacts">
+<section class="contacts" id="contacts">
   <h1 class="visually-hidden">Our contacts</h1>
-  <div id="contacts" class="contacts-list">
+  <div class="contacts-list">
     <ul class="contacts-card">
       <li>
         <div class="contacts-top"><p class="contacts-top-text">CAFE</p></div>
@@ -28,9 +28,11 @@
     </ul>
     <ul class="contacts-card">
       <li>
-        <div class="contacts-top top-color"></div>
-        <p class="contacts-top-text">FOODTRUCK</p>
+        <div class="contacts-top top-color">
+          <p class="contacts-top-text">FOODTRUCK</p>
+        </div>
       </li>
+
       <li class="contacts-location">Los Angeles</li>
       <li class="contacts-text">
         Fusce ut velit laoreet, tempus arcu molestie vulputate
@@ -80,13 +82,18 @@
       </li>
     </ul>
   </div>
-
-  <ul class="contacts-button">
-    <li class="contacts-btn-item">
-      <button class="contacts-btn" type="button">Our Locations</button>
-    </li>
-    <li class="contacts-btn-item">
-      <button class="contacts-btn color-btn" type="button">Franchise</button>
-    </li>
-  </ul>
+  <div class="contacts-buttton">
+    <button type="submit" class="contacts-btn">
+      Our Locations
+      <svg class="contacts-icon-btn" width="10" height="10">
+        <use href="./svg/sprite.svg#arrow-order"></use>
+      </svg>
+    </button>
+    <button type="submit" class="contacts-btn color-btn">
+      Franchise
+      <svg class="contacts-icon-btn color-btn" width="10" height="10">
+        <use href="./svg/sprite.svg#arrow-order"></use>
+      </svg>
+    </button>
+  </div>
 </section>
