@@ -1,1 +1,175 @@
-<header>Header</header>
+<header>
+    <div class="header" id="header">
+        <div class="container">
+            <div class="header-block">
+                <div class="header-block__mobail">
+                    <div href="/src/index.html">
+                        <svg class="header-icon" width="199" height="50" aria-label="Logo">
+                            <use  href="/src/svg/sprite.svg#logo"></use>
+                        </svg>
+                    </div>  
+                    <button
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="mobile-site-nav"
+                        class="mobail-buton-menue"
+                        data-menu-button
+                        >
+                        <svg class="mobail-buton-menue__icon" width="20" height="20" aria-label="burger">
+                            <use class="mobail-buton-menue__icon--menu" href="/src/svg/sprite.svg#burger"></use>
+                            <use class="mobail-buton-menue__icon--close" href="/src/svg/sprite.svg#close"></use>
+                        </svg>
+                    </button> 
+                    <div class="mobile-site-nav mobile-backround" id="mobile-site-nav" data-menu>
+                        <nav>
+                            <ul class="list">
+                                <li class="mobile-site-nav__item">
+                                    <a href="header" class="site-nav__link">Home</a>
+                                </li>
+                                <li class="mobile-site-nav__item">
+                                    <a href="Products" class="site-nav__link">About us</a>
+                                </li>
+                                <li class="mobile-site-nav__item">
+                                    <a href="about"  class="site-nav__link">How it’s made?</a>
+                                </li>
+                                <li class="mobile-site-nav__item">
+                                    <a href="advantages"  class="site-nav__link">Our products</a>
+                                </li>
+                                <li class="mobile-site-nav__item">
+                                    <a href="contacts"  class="site-nav__link">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                </div>
+                <nav class="" id="mobile-site-nav" data-menu>
+                    <ul class="site-nav list">
+                        <li class="site-nav__item">
+                            <a href="header" class="site-nav__link">Home</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="Products" class="site-nav__link">About us</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="About"  class="site-nav__link">How it’s made?</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="advantages"  class="site-nav__link">Our products</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="contacts"  class="site-nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+               <button type="button" class="header-button__order" data-modal-open>
+                <a class="header-button__order--text">Buy now</a>
+                    <svg  width="5" height="10" aria-label="arrow-order">
+                        <use class="header-button__order--icon"  href="/src/svg/sprite.svg#arrow-order"></use>
+                    </svg>
+                </button>
+                <div class="hero-order__backdrop hero-order__hidden" data-modal>
+                    <div class="hero-order__modal">
+                        <a href="/src/index.html" class="hero-order__modal--close">
+                            <svg  width="18" height="18">
+                                <use href="/src/svg/sprite.svg#icon-close"></use>
+                            </svg>
+                        </a>
+                        <div class="order-form">
+                            <p class="order-form__headline">Leave your details and we will call you</p>
+                            <form class="order-form__js">
+                                <div class="order-form__field">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" id="name"/>
+                                    <svg class="order-form__field--icon" width="18" height="18">
+                                        <use href="/src/svg/sprite.svg#icon-name"></use>
+                                    </svg>
+                                </div>
+                                <div class="order-form__field">
+                                    <label for="tel">Phone</label>
+                                    <input class="order-form__field--input" type="tel" name="tel" id="tel" autofocus />
+                                    <svg class="order-form__field--icon" width="18" height="18">
+                                        <use href="/src/svg/sprite.svg#icon-tel"></use>
+                                    </svg>
+                                </div>
+                                <div class="order-form__field">
+                                    <label for="mail">Mail</label>
+                                    <input type="email" name="mail" id="mail" />
+                                    <svg class="order-form__field--icon" width="18" height="18">
+                                        <use href="/src/svg/sprite.svg#icon-mailorder"></use>
+                                    </svg>
+                                </div>
+                                <div class="order-form__field">
+                                    <label for="comments">Comments</label>
+                                    <textarea class="order-form__field--comments"  name="comments" id="comments" placeholder="Enter a message"></textarea>
+                                </div>
+                                <div class="order-form__field">
+                                    <div class="order-form__field--checkbox">
+                                        <label class="order-form__field--label">
+                                            <input class="order-form__field--check" type="checkbox" name="checkbox"/>
+                                            <svg class="order-form__field--check-icon" width="16" height="16">
+                                                <use href="/src/svg/sprite.svg#icon-check"></use>
+                                            </svg>
+                                            <a class="order-form__field--agreement" >
+                                                I agree with the mailing and accept it&nbsp;
+                                            </a>
+                                        </label>
+                                        <a href="https://goit.ua/agreement/" class="order-form__field--treaty">Terms of the contract</a> 
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="order-form__submit">
+                                    <button type="submit" class="order-form__submit--button" data-modal-close>Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="hero">
+    <div class="container">
+        <div class="hero-block">
+            <div class="hero-text__left">
+                <h1 class="hero-text">ice cream made with <span class="hero-text__red">passion</span></h1>
+                <div class="hero-button__block">
+                    <button class="hero-button">Products</button>
+                    <button class="hero-button">How it’s made?</button>
+                </div>
+            </div>
+            <ul class="hero-text__right list">
+                <li class="hero-text__right--li">
+                    <a class="hero-text__right--p">16</a>
+                    <p class="hero-text__right--t">cafes</p>
+                </li>
+                <li class="hero-text__right--li">
+                    <a class="hero-text__right--p">23</a>
+                    <p class="hero-text__right--t">food trucks</p>
+                </li>
+            </ul>
+        </div>
+        <div class="hero-slogan">
+            <p class="hero-slogan__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            <svg href="gallery" class="hero-slogan__icon" width="26" height="26" aria-label="arrow-right">
+                <use href="/src/svg/sprite.svg#arrow-right"></use>
+            </svg>
+        </div>
+        <img 
+        srcset="/src/images/h-jug-of-milk_optimized.png 1x, /src/images/h-jug-of-milk2_optimized.png 2x"
+        src="/src/images/h-jug-of-milk_optimized.png"
+        alt="jug-of-milk"
+        class="hero-img__jug">
+        <img 
+            srcset="/src/images/h-ice_optimized.png 1x, /src/images/h-ice2_optimized.png 2x"
+            src="/src/images/h-ice_optimized.png"
+            alt="ice cream"
+            class="hero-img__ice-cream">
+        <img 
+            srcset="/src/images/h-girl_optimized.png 1x, /src/images/h-girl2_optimized.png 2x"
+            src="/src/images/h-girl_optimized.png"
+            alt="girl"
+            class="hero-img__girl">
+    </div>
+</section>
+    
