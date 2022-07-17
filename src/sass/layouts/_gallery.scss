@@ -1,49 +1,56 @@
-.container {
-    @include mobile {
-        
-        width: 320px;
-    }
-    @include tablet {
-        width: 768px;
-    }
-    @include desktop {
-        width: 1200px;
-    }
-}
+// .container {
+//     @include mobile {
+
+//         width: 320px;
+//     }
+//     @include tablet {
+//         width: 768px;
+//     }
+//     @include desktop {
+//         width: 1200px;
+//     }
+// }
 
 .gallery {
-    // display: flex;
-    // justify-content: center;
-    .container {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    // @include minimize {
-    //     background-image: linear-gradient(var(--how-it-made-section-color) 0 30%, var(--main-color) 30% 100%);
-    // }
-    @include mobile {
+  // display: flex;
+  // justify-content: center;
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  // @include minimize {
+  //     background-image: linear-gradient(var(--how-it-made-section-color) 0 30%, var(--main-color) 30% 100%);
+  // }
+  @include mobile {
     padding-top: 30px;
     padding-bottom: 30px;
-    
-    background-image: linear-gradient(var(--how-it-made-section-color) 0 30%, var(--main-color) 30% 100%);
-    }
-    @include tablet {
-        padding-top: 32px;
-        background-image: linear-gradient(var(--how-it-made-section-color) 0 56%, var(--main-color) 56% 100%); 
-    }
-    @include desktop {
-        display: flex;
-    justify-content: center;
-        padding-top: 60px;
-        padding-bottom: 60px;
-        .container {
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-        background-image: linear-gradient(var(--how-it-made-section-color) 0 27%, var(--main-color) 27% 100%);
-        
-    }
 
+    background-image: linear-gradient(
+      var(--how-it-made-section-color) 0 30%,
+      var(--main-color) 30% 100%
+    );
+  }
+  @include tablet {
+    padding-top: 32px;
+    background-image: linear-gradient(
+      var(--how-it-made-section-color) 0 56%,
+      var(--main-color) 56% 100%
+    );
+  }
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    background-image: linear-gradient(
+      var(--how-it-made-section-color) 0 27%,
+      var(--main-color) 27% 100%
+    );
+  }
 }
 
 // .gallery-img {
@@ -56,13 +63,13 @@
 //     }
 //     @include tablet {
 //         width: 768px;
-//         height: 327px; 
+//         height: 327px;
 //     }
 //     @include desktop {
 //         width: 1013px;
-//         height: 430px; 
+//         height: 430px;
 //     }
-    
+
 // }
 
 // .gallery img {
