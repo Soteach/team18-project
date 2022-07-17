@@ -19,12 +19,11 @@
   z-index: 3;
   @include tablet {
     width: 768px;
-    overflow: hidden;
+ 
   }
 
   @include desktop {
     width: 1280px;
-    overflow: hidden;
   }
 }
 
@@ -94,17 +93,21 @@
   width: 534px;
   height: 534px;
   border-radius: 50%;
-  background-color: rgba(255, 165, 186, 1);
+  
   z-index: -1;
   right: 133px;
   top: 62px;
   bottom: 75px;
+  @include mobile{
+    background-color: rgba(255, 165, 186, 1);
+  }
   @include tablet {
-    top: 45px;
+    top: 42px;
     content: '';
     right: 153px;
     width: 334px;
     height: 334px;
+    background:linear-gradient(to top, rgba(255, 165, 186, 0) 88% ,rgba(255, 165, 186, 1)12%);
   }
 
   @include desktop {
@@ -112,9 +115,10 @@
     width: 534px;
     height: 534px;
     right: 133px;
-    top: 62px;
+    top: 55px;
     bottom: 75px;
     right: 133px;
+    background:linear-gradient(to top, rgba(255, 165, 186, 0) 94% ,rgba(255, 165, 186, 1)6%);
   }
 }
 
@@ -277,10 +281,10 @@
   }
 
   @include desktop {
-    bottom: 77px;
+    bottom: 80px;
     right: 189px;
-    width: 534px;
-    height: 534px;
+    width: 535px;
+    height: 535px;
   }
 }
 
@@ -362,7 +366,7 @@
   z-index: 1;
 
   font-weight: 400;
-  line-height: 1.15;
+  line-height: 1.145;
   letter-spacing: 0.04em;
   font-size: 26px;
 
@@ -375,7 +379,9 @@
   }
 }
 
+
 .hero-text__red {
+  padding: 0;
   z-index: 1;
 
   color: rgba(212, 20, 67, 1);
@@ -493,6 +499,7 @@
 .hero-button__block {
   display: flex;
   margin-top: 20px;
+  
 
   @include tablet {
     margin-top: 20px;
@@ -504,6 +511,8 @@
 }
 
 .hero-button {
+  display: flex;
+  align-items: center;
   height: 24px;
   color: rgba(212, 20, 67, 1);
   border: none;
@@ -516,6 +525,9 @@
   letter-spacing: 0.03em;
   padding-left: 14px;
   padding-right: 14px;
+  
+  text-transform: capitalize;
+  background-color:rgba(255, 255, 255, 1) ;
 
   cursor: pointer;
 
