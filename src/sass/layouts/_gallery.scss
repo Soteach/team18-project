@@ -1,7 +1,6 @@
 .container {
     @include mobile {
-        // padding-left: 0;
-        // padding-right: 0;
+        
         width: 320px;
     }
     @include tablet {
@@ -11,13 +10,21 @@
         width: 1200px;
     }
 }
+
 .gallery {
+    // display: flex;
+    // justify-content: center;
+    .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
     // @include minimize {
     //     background-image: linear-gradient(var(--how-it-made-section-color) 0 30%, var(--main-color) 30% 100%);
     // }
     @include mobile {
     padding-top: 30px;
     padding-bottom: 30px;
+    
     background-image: linear-gradient(var(--how-it-made-section-color) 0 30%, var(--main-color) 30% 100%);
     }
     @include tablet {
@@ -27,6 +34,10 @@
     @include desktop {
         padding-top: 60px;
         padding-bottom: 60px;
+        .container {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
         background-image: linear-gradient(var(--how-it-made-section-color) 0 27%, var(--main-color) 27% 100%);
         
     }
