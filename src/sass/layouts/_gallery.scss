@@ -1,27 +1,30 @@
 .container {
-    width: 100%;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    @media screen and (min-width: 320px) {
-        width: 320px;   
+    @include mobile {
+        // padding-left: 0;
+        // padding-right: 0;
+        width: 320px;
     }
-    @media screen and (min-width: 768px) {
+    @include tablet {
         width: 768px;
     }
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         width: 1200px;
     }
 }
 .gallery {
+    // @include minimize {
+    //     background-image: linear-gradient(var(--how-it-made-section-color) 0 30%, var(--main-color) 30% 100%);
+    // }
+    @include mobile {
     padding-top: 30px;
     padding-bottom: 30px;
-    background-image: linear-gradient(var(--how-it-made-section-color) 0 31%, var(--main-color) 31% 100%);
-    @media screen and (min-width: 768px) {
-        padding-top: 32px;
-        background-image: linear-gradient(var(--how-it-made-section-color) 0 26%, var(--main-color) 26% 100%); 
+    background-image: linear-gradient(var(--how-it-made-section-color) 0 30%, var(--main-color) 30% 100%);
     }
-    @media screen and (min-width: 1200px) {
+    @include tablet {
+        padding-top: 32px;
+        background-image: linear-gradient(var(--how-it-made-section-color) 0 56%, var(--main-color) 56% 100%); 
+    }
+    @include desktop {
         padding-top: 60px;
         padding-bottom: 60px;
         background-image: linear-gradient(var(--how-it-made-section-color) 0 27%, var(--main-color) 27% 100%);
@@ -29,3 +32,28 @@
     }
 
 }
+
+// .gallery-img {
+//     @include minimize {
+//         width: 100%;
+//     }
+//     @include mobile {
+//         width: 320px;
+//         height: 136px;
+//     }
+//     @include tablet {
+//         width: 768px;
+//         height: 327px; 
+//     }
+//     @include desktop {
+//         width: 1013px;
+//         height: 430px; 
+//     }
+    
+// }
+
+// .gallery img {
+//     @include mobile {
+//         min-width: 320px;
+//     }
+// }
