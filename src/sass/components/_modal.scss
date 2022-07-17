@@ -138,13 +138,16 @@ max-height: 14px;
       fill: rgba(255, 255, 255, 1);
     }
     @include mobile {
-      width: 186px;
+      width: 189px;
+      margin-left: 20px;
+      margin-right: 20px;
     }
   
     @include tablet {
       display: block;
-      margin-left: 32px;
-      margin-bottom: 20px;
+      width: 209px;
+      margin-left: 34px;
+      margin-bottom: 34px;
     }
   
     @include desktop {
