@@ -110,7 +110,28 @@ margin: -50px;
     line-height: 1.14;
     }
 
+
+    
+
+  animation-name: changeBgColor;
+  animation-duration: 1500ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
+
+@keyframes changeBgColor {
+
+
+  0% {
+    color: #FFA5BA
+  }
+
+  100% {
+    color: #d41443;
+  }
+}
+
 
 .advantages__text {
     font-size: 12px;
@@ -125,3 +146,5 @@ margin: -50px;
     line-height: 1.75;
     }
 }
+
+
