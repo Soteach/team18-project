@@ -31,6 +31,29 @@
   }
 }
 
+.header-img{
+  position: absolute;
+
+background-size: cover;
+background-repeat: no-repeat;
+@include tablet{
+  height: 40.959px;
+ width:219.78px;
+ right: 210px;
+ bottom: 0;
+background-image: url("/src/images/element-tablet.png");
+}
+
+@include desktop{
+  height: 34.125px;
+  width: 262.5px;
+ right: 269px;
+ bottom: 0;
+background-image: url("/src/images/element-desktop.png");
+}
+
+}
+
 .header-block__mobile {
   @include mobile {
     display: flex;
@@ -52,8 +75,9 @@
   }
 }
 
-.header-block::after {
+.header-blocki__img{
   position: absolute;
+
   display: block;
   width: 534px;
   height: 534px;
@@ -95,7 +119,10 @@
     );
     transform: rotate(180deg);
   }
+
 }
+
+
 
 .site-nav {
   display: none;
