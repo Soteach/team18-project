@@ -1,41 +1,65 @@
 <section class="about" id="about">
-    <div class="container">
-        <p class="about__top-text">tradition and love</p>
-        <h2 class="about__title">how it’s made?</h2>
-        <div class="about-content-block">
-            <div class="about-content__img">
-                <img srcset="/src/images/ab-cow_optimized.png 1x,
-                /src/images/ab-cow2_optimized.png 2x" 
-                src="/src/images/ab-cow_optimized.png"
-                    alt="Мы делаем мороженное из молока" width="501" />
-            </div>
-            <div class="about-content__text-wrap">
-                <ul class="about-content__list list">
-                    <li class="about-content__item">
-                        <p>
-                            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus,
-                            faucibus
-                            lorem eget,
-                            egestas eros. Maecenas eleifend erat at justo fringilla.
-                        </p>
-                    </li>
-                    <li class="about-content__item">
-                        <p>
-                            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris
-                            rhoncus orci
-                            in imperdiet placerat.Vestibulum euismod nisl suscipit ligula volutpat, a feugiat
-                            urna
-                            maximus. Cras massa nibh, tincidunt.
-                        </p>
-                    </li>
-                    <li class="about-content__item">
-                        <p>
-                            Aliquam erat volutpat. Aenean accumsan.
-                        </p>
-                    </li>
-                </ul>
-                <button type="button" class="about-content__btn btn">Read more</button>
-            </div>
-        </div>
+  <div class="container">
+    <p class="about__top-text">tradition and love</p>
+    <h2 class="about__title">how it’s made?</h2>
+    <div class="about-content-block">
+      <div class="about-content__img">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              /src/images/ab-cow_optimized.png  1x,
+              /src/images/ab-cow2_optimized.png 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              /src/images/ab-cow_optimized.png 1x,
+              /src/images/ab-cow_tablet-2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 320px)"
+            srcset="
+              /src/images/ab-cow_optimized.png 1x,
+              /src/images/ab-cow_tel-2x.png    2x
+            "
+          />
+          <img
+            srcset="
+              /src/images/ab-cow_optimized.png  1x,
+              /src/images/ab-cow2_optimized.png 2x
+            "
+            src="/src/images/ab-cow_optimized.png"
+            alt="Мы делаем мороженное из молока"
+            width="501"
+          />
+        </picture>
+      </div>
+      <div class="about-content__text-wrap">
+        <ul class="about-content__list list">
+          <li class="about-content__item">
+            <p>
+              Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+              justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
+              erat at justo fringilla.
+            </p>
+          </li>
+          <li class="about-content__item">
+            <p>
+              Curabitur lacinia enim at ex blandit, vel pellentesque odio
+              elementum. Mauris rhoncus orci in imperdiet placerat.Vestibulum
+              euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
+              Cras massa nibh, tincidunt.
+            </p>
+          </li>
+          <li class="about-content__item">
+            <p>Aliquam erat volutpat. Aenean accumsan.</p>
+          </li>
+        </ul>
+        <button type="button" class="about-content__btn btn">Read more</button>
+      </div>
     </div>
+  </div>
 </section>
