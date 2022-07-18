@@ -1,4 +1,4 @@
-.mobail-buton-menue {
+.mobile-buton-menue {
    
     display: block;
     padding: 0;
@@ -17,20 +17,22 @@
 
 .mobile-backround{
     position: relative;
-    height: 100vh;
-    width: 100vw;
+   
   
     
     background-color: rgba(225, 121, 146, 1);
     @include mobile {
+        height: 100vh;
+        width: 100vw;
         transform: translateX(-20px);
     }
     @include tablet {
-        transform: translateX(-32px);
+        //transform: translateX(458px);
+        //width: 254px;
     }
 }
 
-.mobail-buton-menue__icon {
+.mobile-buton-menue__icon {
     cursor: pointer;
 }
 
@@ -38,7 +40,7 @@
     overflow: visible;
 }
 
-.mobail-buton-menue__icon--close {
+.mobile-buton-menue__icon--close {
     display: none;
     position: absolute;
      fill: rgba(212, 20, 67, 1);;
@@ -55,17 +57,19 @@
     }
 }
 
-.mobail-buton-menue.is-open .mobail-buton-menue__icon--close {
+.mobile-buton-menue.is-open .mobile-buton-menue__icon--close {
 display: block;
 z-index: 2;
 position: absolute;
 max-width: 14px;
 max-height: 14px;
+
+
 }
 
 
 
-.mobail-buton-menue.is-open .mobail-buton-menue__icon--menu {
+.mobile-buton-menue.is-open .mobile-buton-menue__icon--menu {
     display: none;
     position: relative;
     }
@@ -83,6 +87,8 @@ max-height: 14px;
     color: 
     rgba(255, 255, 255, 1);
 
+    
+
    
     &.is-open {
         display: flex;
@@ -90,6 +96,7 @@ max-height: 14px;
         justify-content: space-between;
         @media desktop{
             display: none;
+         
        
     }
 
@@ -123,7 +130,7 @@ max-height: 14px;
     color: rgba(212, 20, 67, 1);
     fill: rgba(212, 20, 67, 1);
     cursor: pointer;
-    min-width: 160px;
+    width: 186px;
     margin-bottom: 20px;
   
     transition-property: background-color, color, fill;
@@ -146,7 +153,6 @@ max-height: 14px;
     @include tablet {
       display: block;
       width: 209px;
-      margin-left: 34px;
       margin-bottom: 34px;
     }
   
