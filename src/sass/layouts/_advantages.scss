@@ -80,21 +80,21 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 160px;
-    margin-right: 25px;
-    &:last-child {
+    flex-basis: calc((100% - 78px) / 4);
+    margin-right: 26px;
+&:last-child {
     margin-right: 0;
-    } 
+}
   }
 
   @media screen and (min-width: 1200px) {
-    width: 290px;
-    margin-right: 130px;
-    &:last-child {
-    margin-right: 0;
-    } 
     
-  }
+    flex-basis: calc((100% - 390px) / 3);
+    margin-right: 130px;
+&:last-child {
+    margin-right: 0;
+}
+}
 }
 
 .advantages__numbers {
@@ -138,6 +138,7 @@
   font-size: 12px;
   font-weight: 700;
   line-height: 1.67;
+
 
   @include tablet {
     font-size: 14px;
