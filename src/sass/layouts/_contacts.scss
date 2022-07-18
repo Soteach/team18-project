@@ -27,6 +27,8 @@
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     padding-left: 32px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -36,11 +38,17 @@
             1px 4px 6px rgba(0, 0, 0, 0.16);
         ;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
+        @include desktop {
+            transform: scale(1.2);
+            transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        }
     }
 
-    @include desktop {
-        padding-left: 40px;
-    }
+
 
 
     @include tablet {
@@ -52,6 +60,7 @@
     @include desktop {
         width: 368px;
         height: 538px;
+        padding-left: 40px;
     }
 
 
@@ -67,11 +76,15 @@
     margin-bottom: 32px;
     justify-content: center;
 
+
+
     @include tablet {
         gap: 32px;
         margin-bottom: 60px;
     }
+
 }
+
 
 
 
@@ -103,6 +116,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 
     @include tablet {
         width: 73px;
@@ -306,6 +320,7 @@
     cursor: pointer;
     display: block;
     margin: 0 auto;
+    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
