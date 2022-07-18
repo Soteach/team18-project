@@ -1,7 +1,8 @@
 .contacts {
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 60px;
+    padding-top: 30px;
+    padding-bottom: 20px;
     background: rgb(255, 245, 246);
     background: linear-gradient(0deg, rgba(255, 245, 246, 1) 76%, rgba(255, 255, 255, 1) 76%);
 
@@ -10,11 +11,15 @@
         background: linear-gradient(0deg, rgba(255, 245, 246, 1) 54%, rgba(255, 255, 255, 1) 54%);
         padding-left: 16px;
         padding-right: 16px;
+        padding-top: 40px;
+        padding-bottom: 20px;
     }
 
     @include desktop {
         background: rgb(255, 245, 246);
         background: linear-gradient(0deg, rgba(255, 245, 246, 1) 80%, rgba(255, 255, 255, 1) 80%);
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
 
@@ -267,13 +272,10 @@
 
 
 .contacts-button {
-    padding-bottom: 40px;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-
-
 
 }
 
@@ -296,7 +298,7 @@
 
 
 .contacts-buttton {
-    padding-bottom: 40px;
+
 
     @include tablet {
         display: flex;
@@ -345,6 +347,7 @@
     @include desktop {
         &:not(:last-child) {
             margin-right: 12px;
+            margin-bottom: 0;
         }
     }
 
