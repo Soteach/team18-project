@@ -16,10 +16,10 @@
   @include tablet {
     display: flex;
 
-    margin: -8px;
+    
   }
   @include desktop {
-    margin: -50px;
+    
   }
 }
 
@@ -80,13 +80,20 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: calc((100% - 16px * 4) / 4);
-    margin: 8px;
+    width: 160px;
+    margin-right: 25px;
+    &:last-child {
+    margin-right: 0;
+    } 
   }
 
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 100px * 3) / 3);
-    margin: 50px;
+    width: 290px;
+    margin-right: 130px;
+    &:last-child {
+    margin-right: 0;
+    } 
+    
   }
 }
 
@@ -124,5 +131,20 @@
     100% {
       color: #d41443;
     }
+  }
+}
+
+.advantages__text {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.67;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.75;
   }
 }
