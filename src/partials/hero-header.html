@@ -2,7 +2,7 @@
     <div class="header" id="header">
         <div class="container">
             <div class="header-block">
-                <div class="header-block__mobail">
+                <div class="header-block__mobile">
                     <svg class="header-icon" width="199" height="50" aria-label="Logo">
                         <use  href="/src/svg/sprite.svg#logo"></use>
                     </svg> 
@@ -10,18 +10,18 @@
                         type="button"
                         aria-expanded="false"
                         aria-controls="mobile-site-nav"
-                        class="mobail-buton-menue"
+                        class="mobile-buton-menue"
                         data-menu-button
                         >
-                        <svg class="mobail-buton-menue__icon" width="20" height="20" aria-label="burger">
-                            <use class="mobail-buton-menue__icon--menu" href="/src/svg/sprite.svg#burger"></use>
-                            <use class="mobail-buton-menue__icon--close" href="/src/svg/sprite.svg#close"></use>
+                        <svg class="mobile-buton-menue__icon" width="20" height="20" aria-label="burger">
+                            <use class="mobile-buton-menue__icon--menu" href="/src/svg/sprite.svg#burger"></use>
+                            <use class="mobile-buton-menue__icon--close" href="/src/svg/sprite.svg#close"></use>
                         </svg>
                     </button> 
                     <div class="mobile-site-nav mobile-backround" id="mobile-site-nav" data-menu>
                         <nav>
                             <button type="button" class="mobile-button__order" data-modal-open>
-                                <a class="header-button__order--text">Buy now</a>
+                                <span class="header-button__order--text">Buy now</span>
                                     <svg  width="5" height="10" aria-label="arrow-order">
                                         <use class="header-button__order--icon"  href="/src/svg/sprite.svg#arrow-order"></use>
                                     </svg>
@@ -46,7 +46,7 @@
                         </nav>
                     </div>
                 </div>
-                <nav class="" id="mobile-site-nav" data-menu>
+                <nav class="" data-menu>
                     <ul class="site-nav list">
                         <li class="site-nav__item">
                             <a href="/src/index.html#hero" class="site-nav__link">Home</a>
@@ -66,7 +66,7 @@
                     </ul>
                 </nav>
                <button type="button" class="header-button__order" data-modal-open>
-                <a class="header-button__order--text">Buy now</a>
+                <span class="header-button__order--text">Buy now</span>
                     <svg  width="5" height="10" aria-label="arrow-order">
                         <use class="header-button__order--icon"  href="/src/svg/sprite.svg#arrow-order"></use>
                     </svg>
@@ -76,7 +76,22 @@
     </div>
 </header>
 <section class="hero" id="hero">
-    <div class="container">
+    <div class="container-hero">
+            <img 
+        srcset="/src/images/h-jug-of-milk_optimized.png 1x, /src/images/h-jug-of-milk2_optimized.png 2x"
+        src="/src/images/h-jug-of-milk_optimized.png"
+        alt="jug-of-milk"
+        class="hero-img__jug">
+        <img 
+            srcset="/src/images/h-ice_optimized.png 1x, /src/images/h-ice2_optimized.png 2x"
+            src="/src/images/h-ice_optimized.png"
+            alt="ice cream"
+            class="hero-img__ice-cream">
+        <img 
+            srcset="/src/images/h-girl_optimized.png 1x, /src/images/h-girl2_optimized.png 2x"
+            src="/src/images/h-girl_optimized.png"
+            alt="girl"
+            class="hero-img__girl">
         <div class="hero-block">
             <div class="hero-text__left">
                 <h1 class="hero-text">ice cream made with <span class="hero-text__red">passion</span></h1>
@@ -98,25 +113,10 @@
         </div>
         <div class="hero-slogan">
             <p class="hero-slogan__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-            <svg href="gallery" class="hero-slogan__icon" width="26" height="26" aria-label="arrow-right">
+            <svg class="hero-slogan__icon" width="26" height="26" aria-label="arrow-right">
                 <use href="/src/svg/sprite.svg#arrow-right"></use>
             </svg>
         </div>
-        <img 
-        srcset="/src/images/h-jug-of-milk_optimized.png 1x, /src/images/h-jug-of-milk2_optimized.png 2x"
-        src="/src/images/h-jug-of-milk_optimized.png"
-        alt="jug-of-milk"
-        class="hero-img__jug">
-        <img 
-            srcset="/src/images/h-ice_optimized.png 1x, /src/images/h-ice2_optimized.png 2x"
-            src="/src/images/h-ice_optimized.png"
-            alt="ice cream"
-            class="hero-img__ice-cream">
-        <img 
-            srcset="/src/images/h-girl_optimized.png 1x, /src/images/h-girl2_optimized.png 2x"
-            src="/src/images/h-girl_optimized.png"
-            alt="girl"
-            class="hero-img__girl">
     </div>
 </section>
     

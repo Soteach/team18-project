@@ -1,17 +1,20 @@
 .header {
   position: fixed;
-  margin: auto;
+  top: 0;
   left: 0;
   right: 0;
-  top: 0;
+ 
+ 
+ 
   font-family: $font-main;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.3;
   letter-spacing: 0.03em;
+
   background-color: rgba(255, 184, 202, 1);
   width: 320px;
-  z-index: 3;
+  z-index: 7;
   @include tablet {
     width: 768px;
   }
@@ -38,7 +41,7 @@
   }
 }
 
-.header-block__mobail {
+.header-block__mobile {
   @include mobile {
     display: flex;
     justify-content: space-between;
@@ -74,31 +77,27 @@
     background-color: rgba(255, 165, 186, 1);
   }
   @include tablet {
-    top: 42px;
+    top: 41px;
     content: '';
     right: 153px;
     width: 334px;
     height: 334px;
-    background: linear-gradient(
-      to top,
-      rgba(255, 165, 186, 0) 88%,
-      rgba(255, 165, 186, 1) 12%
-    );
+
+    background:linear-gradient(to top, rgba(255, 165, 186, 0) 87.7% ,rgba(255, 165, 186, 1)12.3%);
+    transform: rotate(180deg)
+
   }
 
   @include desktop {
     content: '';
     width: 534px;
     height: 534px;
-    right: 133px;
-    top: 55px;
-    bottom: 75px;
-    right: 133px;
-    background: linear-gradient(
-      to top,
-      rgba(255, 165, 186, 0) 94%,
-      rgba(255, 165, 186, 1) 6%
-    );
+
+    right: 134px;
+    top: 53px;
+    background:linear-gradient(to top, rgba(255, 165, 186, 0) 93.5% ,rgba(255, 165, 186, 1)6.5%);
+    transform: rotate(180deg)
+
   }
 }
 
@@ -128,9 +127,7 @@
   color: rgba(255, 255, 255, 1);
 
   transition-property: color;
-  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 250ms;
   cursor: pointer;
 
   &:hover,
@@ -152,9 +149,7 @@
   min-width: 160px;
 
   transition-property: background-color, color, fill;
-  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 250ms;
 
   &:hover,
   &:focus {
@@ -169,10 +164,15 @@
   @include tablet {
     display: block;
     margin-left: 32px;
+    width: 160px;
+    height: 44px;
   }
 
   @include desktop {
     display: block;
+    margin-left: 0;
+    width: 160px;
+    height: 44px;
   }
 }
 
@@ -188,7 +188,7 @@
 .header-button__order--icon {
   margin: 0px;
 }
-.mobail-buton-menue {
+.mobile-buton-menue {
   display: block;
   padding: 0;
   border: none;
@@ -210,13 +210,12 @@
   margin-right: auto;
   position: relative;
   overflow: hidden;
-  width: 320px;
+  min-width: 320px;
 
   color: rgba(255, 255, 255, 1);
   position: relative;
-  background-color: rgba(255, 184, 202, 1);
+  background-color: var(--main-rose-color);
   @include tablet {
-    width: 768px;
     padding-top: 5px;
     padding-bottom: 56px;
     padding-top: 20px;
@@ -224,8 +223,34 @@
 
   @include desktop {
     padding-top: 60px;
-    width: 1280px;
     padding-bottom: 84px;
+  }
+}
+
+
+.container-hero {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @include mobile {
+      width: 320px;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  @include tablet {
+      width: 768px;
+      padding-left: 32px;
+      padding-right: 32px;
+  }
+
+  @include desktop {
+      width: 1200px;
+      padding-left: 16px;
+      padding-right: 16px;
   }
 }
 
@@ -250,19 +275,19 @@
   height: 345px;
   border-radius: 50%;
   background-color: rgba(255, 165, 186, 1);
-  bottom: 75px;
+  bottom: -84px;
   right: -62px;
 
   @include tablet {
-    bottom: 40px;
+    bottom: -16px;
     right: 185px;
     width: 334px;
     height: 334px;
   }
 
   @include desktop {
-    bottom: 80px;
-    right: 189px;
+    bottom: -3px;
+    right: 150px;
     width: 535px;
     height: 535px;
   }
@@ -276,13 +301,13 @@
     display: block;
     width: 152px;
     height: 154px;
-    bottom: 16px;
+    bottom: -40px;
   }
 
   @include desktop {
     width: 213px;
     height: 216px;
-    bottom: 60px;
+    bottom: -23px;
   }
 }
 
@@ -290,18 +315,21 @@
   position: absolute;
   width: 171px;
   height: 410px;
-  bottom: 0;
+  bottom: -158px;
   right: 32px;
   z-index: 1;
 
   @include tablet {
-    right: 303px;
+    right: 271px;
     width: 143px;
     height: 336px;
+    bottom: -83px;
   }
 
   @include desktop {
-    right: 368px;
+    right: 312px;
+    bottom: -83px;
+   
     width: 236px;
     height: 557px;
   }
@@ -316,14 +344,14 @@
     display: block;
     width: 190px;
     height: 150px;
-    bottom: 0;
-    right: 32;
+    bottom: -83px;
+    right: 32px;
   }
 
   @include desktop {
     width: 304px;
     height: 241px;
-    right: 56;
+    bottom: -83px;
   }
 }
 
@@ -526,9 +554,7 @@
   }
 
   transition-property: background-color, color, fill;
-  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 250ms;
 
   &:hover,
   &:focus {
@@ -577,9 +603,7 @@
 .hero-slogan__icon {
   fill: rgba(255, 255, 255, 1);
   transition-property: background-color, color, fill;
-  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 250ms;
   cursor: pointer;
 
   &:hover,
