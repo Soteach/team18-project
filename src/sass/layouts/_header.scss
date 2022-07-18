@@ -1,8 +1,3 @@
-@import '../utils/mixins';
-@import '../utils/reset';
-@import '../utils/variables';
-@import '../utils/visually-hidden';
-
 .header {
   position: fixed;
   top: 0;
@@ -16,12 +11,18 @@
   font-weight: 400;
   line-height: 1.3;
   letter-spacing: 0.03em;
-  background-color: var(--main-rose-color);
- min-width:320px;
- z-index: 7;
 
+  background-color: rgba(255, 184, 202, 1);
+  width: 320px;
+  z-index: 7;
+  @include tablet {
+    width: 768px;
+  }
+
+  @include desktop {
+    width: 1280px;
+  }
 }
-
 
 .header-block {
   position: relative;
@@ -63,16 +64,16 @@
 
 .header-block::after {
   position: absolute;
-  display: inline-block;
+  display: block;
   width: 534px;
   height: 534px;
   border-radius: 50%;
-  
+
   z-index: -1;
   right: 133px;
   top: 62px;
   bottom: 75px;
-  @include mobile{
+  @include mobile {
     background-color: rgba(255, 165, 186, 1);
   }
   @include tablet {
@@ -81,18 +82,22 @@
     right: 153px;
     width: 334px;
     height: 334px;
+
     background:linear-gradient(to top, rgba(255, 165, 186, 0) 87.7% ,rgba(255, 165, 186, 1)12.3%);
     transform: rotate(180deg)
+
   }
 
   @include desktop {
     content: '';
     width: 534px;
     height: 534px;
+
     right: 134px;
     top: 53px;
     background:linear-gradient(to top, rgba(255, 165, 186, 0) 93.5% ,rgba(255, 165, 186, 1)6.5%);
     transform: rotate(180deg)
+
   }
 }
 
@@ -382,7 +387,6 @@
   }
 }
 
-
 .hero-text__red {
   padding: 0;
   z-index: 1;
@@ -502,7 +506,6 @@
 .hero-button__block {
   display: flex;
   margin-top: 20px;
-  
 
   @include tablet {
     margin-top: 20px;
@@ -528,9 +531,9 @@
   letter-spacing: 0.03em;
   padding-left: 14px;
   padding-right: 14px;
-  
+
   text-transform: capitalize;
-  background-color:rgba(255, 255, 255, 1) ;
+  background-color: rgba(255, 255, 255, 1);
 
   cursor: pointer;
 

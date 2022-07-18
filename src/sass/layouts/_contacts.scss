@@ -1,7 +1,8 @@
 .contacts {
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 60px;
+    padding-top: 30px;
+    padding-bottom: 20px;
     background: rgb(255, 245, 246);
     background: linear-gradient(0deg, rgba(255, 245, 246, 1) 76%, rgba(255, 255, 255, 1) 76%);
 
@@ -10,11 +11,15 @@
         background: linear-gradient(0deg, rgba(255, 245, 246, 1) 54%, rgba(255, 255, 255, 1) 54%);
         padding-left: 16px;
         padding-right: 16px;
+        padding-top: 40px;
+        padding-bottom: 20px;
     }
 
     @include desktop {
         background: rgb(255, 245, 246);
         background: linear-gradient(0deg, rgba(255, 245, 246, 1) 80%, rgba(255, 255, 255, 1) 80%);
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
 
@@ -27,6 +32,8 @@
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     padding-left: 32px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -36,11 +43,17 @@
             1px 4px 6px rgba(0, 0, 0, 0.16);
         ;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
+        @include desktop {
+            transform: scale(1.2);
+            transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        }
     }
 
-    @include desktop {
-        padding-left: 40px;
-    }
+
 
 
     @include tablet {
@@ -52,6 +65,7 @@
     @include desktop {
         width: 368px;
         height: 538px;
+        padding-left: 40px;
     }
 
 
@@ -67,11 +81,15 @@
     margin-bottom: 32px;
     justify-content: center;
 
+
+
     @include tablet {
         gap: 32px;
         margin-bottom: 60px;
     }
+
 }
+
 
 
 
@@ -103,6 +121,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 
     @include tablet {
         width: 73px;
@@ -253,13 +272,10 @@
 
 
 .contacts-button {
-    padding-bottom: 40px;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-
-
 
 }
 
@@ -282,7 +298,7 @@
 
 
 .contacts-buttton {
-    padding-bottom: 40px;
+
 
     @include tablet {
         display: flex;
@@ -306,6 +322,7 @@
     cursor: pointer;
     display: block;
     margin: 0 auto;
+    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -330,6 +347,7 @@
     @include desktop {
         &:not(:last-child) {
             margin-right: 12px;
+            margin-bottom: 0;
         }
     }
 
