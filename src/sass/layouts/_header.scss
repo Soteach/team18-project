@@ -159,11 +159,15 @@
   @include tablet {
     display: block;
     margin-left: 32px;
+    width: 160px;
+    height: 44px;
   }
 
   @include desktop {
     display: block;
     margin-left: 0;
+    width: 160px;
+    height: 44px;
   }
 }
 
@@ -336,7 +340,7 @@
     width: 190px;
     height: 150px;
     bottom: -83px;
-    right: 0;
+    right: 32px;
   }
 
   @include desktop {
