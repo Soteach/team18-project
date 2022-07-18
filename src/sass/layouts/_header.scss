@@ -218,6 +218,33 @@
   }
 }
 
+
+.container-hero {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @include mobile {
+      width: 320px;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  @include tablet {
+      width: 768px;
+      padding-left: 32px;
+      padding-right: 32px;
+  }
+
+  @include desktop {
+      width: 1200px;
+      padding-left: 16px;
+      padding-right: 16px;
+  }
+}
+
 .hero-block {
   display: flex;
   justify-content: space-between;
