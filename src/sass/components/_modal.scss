@@ -1,167 +1,161 @@
 .mobile-buton-menue {
-   
-    display: block;
-    padding: 0;
-    border: none;
-  
-    fill: 
-    rgba(255, 255, 255, 1);
-    z-index: 1;
-    color: 
-    rgba(255, 255, 255, 1);
-    cursor: pointer;
-    @media desktop {
-        display:none;
-    }
+  display: block;
+  padding: 0;
+  border: none;
+
+  fill: rgba(255, 255, 255, 1);
+  z-index: 1;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  @media desktop {
+    display: none;
+  }
 }
 
-.mobile-backround{
-    position: relative;
-   
-  
-    
-    background-color: rgba(225, 121, 146, 1);
-    @include mobile {
-        height: 100vh;
-        width: 100vw;
-        transform: translateX(-20px);
-    }
-    @include tablet {
-        //transform: translateX(458px);
-        //width: 254px;
-    }
+.mobile-backround-t {
+  position: relative;
+  z-index: 1;
+
+  background-color: rgba(225, 121, 146, 1);
+  @include mobile {
+    height: 100vw;
+    width: 100vw;
+    transform: translateX(-20px);
+  }
+  @include tablet {
+    transform: translateX(300px);
+    height: 416px;
+  }
+}
+
+.mobile-backround {
+  position: relative;
+
+  background-color: rgba(225, 121, 146, 1);
+  @include mobile {
+    height: 1000vh;
+    width: 100vw;
+    transform: translateX(-20px);
+  }
+  @include tablet {
+    transform: translateX(470px);
+    height: 1000vh;
+  }
 }
 
 .mobile-buton-menue__icon {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.header .mobile-site-nav{
-    overflow: visible;
+.header .mobile-site-nav {
+  overflow: visible;
 }
 
 .mobile-buton-menue__icon--close {
-    display: none;
-    position: absolute;
-     fill: rgba(212, 20, 67, 1);;
-   
-       
+  display: none;
+  position: absolute;
+  fill: rgba(212, 20, 67, 1);
 
-    transition-property: fill;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover, &:focus {
-        fill: rgba(212, 20, 67, 1);
-    }
+  &:hover,
+  &:focus {
+    fill: rgba(212, 20, 67, 1);
+  }
 }
 
 .mobile-buton-menue.is-open .mobile-buton-menue__icon--close {
-display: block;
-z-index: 2;
-position: absolute;
-max-width: 14px;
-max-height: 14px;
-
-
+  display: block;
+  position: absolute;
+  max-width: 14px;
+  max-height: 14px;
 }
-
-
 
 .mobile-buton-menue.is-open .mobile-buton-menue__icon--menu {
-    display: none;
-    position: relative;
-    }
-
-   
+  display: none;
+  position: relative;
+}
 
 .mobile-site-nav {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-weight: 500;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    color: 
-    rgba(255, 255, 255, 1);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 1);
 
-    
-
-   
-    &.is-open {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        @media desktop{
-            display: none;
-         
-       
-    }
-
-    }
-
-}
-
-.mobile-site-nav__item{
+  &.is-open {
     display: flex;
-    align-items: center;
-    padding: 20px;
-    height: 42px;
-    width: 100vw;
-    width: 100%;
-    border-bottom: solid 2px
-    rgba(225, 130, 152, 1) ;
-    &:first-child{
-        border-top: solid 2px
-    rgba(225, 130, 152, 1) ;
+    flex-direction: column;
+    justify-content: space-between;
+    @media desktop {
+      display: none;
     }
+  }
 }
 
+.mobile-site-nav__item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  height: 42px;
+  width: 100vw;
+  width: 100%;
+  border-bottom: solid 2px rgba(225, 130, 152, 1);
+  &:first-child {
+    border-top: solid 2px rgba(225, 130, 152, 1);
+  }
+}
 
-.mobile-button__order{
-    margin-top: 60px;
-    height: 44px;
-    border: none;
-    border-radius: 22px;
-    background-color: rgba(255, 255, 255, 1);
-    padding: 0;
-    color: rgba(212, 20, 67, 1);
-    fill: rgba(212, 20, 67, 1);
-    cursor: pointer;
-    width: 186px;
-    margin-bottom: 20px;
-  
-    transition-property: background-color, color, fill;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
-    &:hover,
-    &:focus {
-      background-color: rgba(212, 20, 67, 1);
-      color: rgba(255, 255, 255, 1);
-      fill: rgba(255, 255, 255, 1);
-    }
-    @include mobile {
-      width: 189px;
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-  
-    @include tablet {
-      display: block;
-      width: 209px;
-      margin-bottom: 34px;
-    }
-  
-    @include desktop {
-      display: block;
-    }
+.mobile-button__order {
+  margin-top: 60px;
+  height: 44px;
+  border: none;
+  border-radius: 22px;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 0;
+  color: rgba(212, 20, 67, 1);
+  fill: rgba(212, 20, 67, 1);
+  cursor: pointer;
+  width: 186px;
+  margin-bottom: 20px;
+
+  transition-property: background-color, color, fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: rgba(212, 20, 67, 1);
+    color: rgba(255, 255, 255, 1);
+    fill: rgba(255, 255, 255, 1);
   }
-  
-  .header-button__order--text {
-    font-family: $font-main;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.3;
-    letter-spacing: 0.03em;
-    margin-right: 10px;
+  @include mobile {
+    width: 189px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
+
+  @include tablet {
+    margin-top: 35px;
+    margin-left: 74px;
+    width: 160px;
+    display: block;
+    margin-bottom: 34px;
+  }
+
+  @include desktop {
+    display: block;
+  }
+}
+
+.header-button__order--text {
+  font-family: $font-main;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  margin-right: 10px;
+}

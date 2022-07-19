@@ -1,16 +1,27 @@
 .about {
   background-color: var(--how-it-made-section-color);
   padding-top: 60px;
+  background-image: url(/src/images/ab-milk-bg_mob.png);
+  background-repeat: no-repeat;
+  background-position-y: 75%;
+  background-size: 90%;
+  background-position-x: 65%;
+
+  @include tablet {
+    background-image: none;
+  }
+
+  @include desktop {
+    background-image: url(/src/images/ab-milk-bg_optimized.png);
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
 
   &.container {
     @include tablet {
       padding-left: 32px;
       padding-right: 34px;
-    }
-
-    @include desktop {
-      padding-left: 0px;
-      padding-right: 0px;
     }
   }
 }
@@ -57,27 +68,24 @@
 }
 
 .about-content-block {
-  background-image: url(/src/images/ab-milk-bg_mob.png);
-  background-repeat: no-repeat;
-  background-position-y: 67%;
-  background-size: 100%;
-
-  @include tablet {
+  // background-image: url(/images/ab-milk-bg_mob.png);
+  // background-repeat: no-repeat;
+  // background-position-y: 67%;
+  // background-size: 100%;
+  @media screen and (min-width: 768px) {
     display: flex;
     background-image: none;
     justify-content: center;
     align-items: center;
   }
-
-  @include desktop {
-    background-image: url(/src/images/ab-milk-bg_optimized.png);
-    background-repeat: no-repeat;
-    background-position-y: 0%;
-    background-size: 100%;
-    margin-left: -16px;
-    margin-right: -16px;
-    justify-content: flex-start;
-  }
+  // @media screen and (min-width: 1200px) {
+  //     background-image: url(/images/ab-milk-bg_optimized.png);
+  //     background-repeat: no-repeat;
+  //     background-position-y: 0%;
+  //     background-size: 100%;
+  //     margin-left: -20px;
+  //     margin-right: -20px;
+  //     justify-content: flex-start;}
 }
 
 .about-content__img {
@@ -174,7 +182,6 @@
   @include desktop {
     @include fontStyle(16px, 700, null, 1.31);
   }
-
   &::after {
     content: '';
     width: 10px;
