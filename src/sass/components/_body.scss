@@ -1,13 +1,4 @@
 body {
   font-family: $font-main;
   background-color: var(--main-color);
-  padding-top: 58px;
-
-  @include tablet {
-    padding-top: 81px;
-  }
-
-  @include desktop {
-    padding-top: 86px;
-  }
 }
