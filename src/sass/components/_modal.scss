@@ -33,13 +33,13 @@
 
   background-color: rgba(225, 121, 146, 1);
   @include mobile {
-    height: 500px;
+    height: 1000vh;
     width: 100vw;
     transform: translateX(-20px);
   }
   @include tablet {
     transform: translateX(470px);
-    height: 100vh;
+    height: 1000vh;
   }
 }
 
