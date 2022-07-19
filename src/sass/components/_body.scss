@@ -2,3 +2,7 @@ body {
   font-family: $font-main;
   background-color: var(--main-color);
 }
+
+html {
+  scroll-behavior: smooth;
+}
